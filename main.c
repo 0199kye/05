@@ -5,23 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int answer = 59;
-	int i, trial=0;
+	int i,n;
+	int sum=0;
 	
-	do
-	{
-	 printf("input a number:");
-	 scanf("%i", &i);
+	printf ("input a number; ");
+	scanf ("%i", &n);
+	
+	for (i=1;i<=n;i++)
+	 sum += i;
 	 
-	 if(answer >1)
-	   printf("low!\n");
-	 else if (answer <1)
-	   printf("high!\n");
-	   
-	  trial++;
-	}while(i != answer);
 	
-	printf("conglaturation, number of trial : %i\n", trial);
+	printf("the sum result is %i\n", sum);
 	
 	return 0;
 }
