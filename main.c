@@ -5,20 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
-	int num=0;
-	char c;
+	int answer = 59;
+	int i, trial=0;
 	
-	printf ("Input a string:");
-	
-	while((c=getchar()) != '\n')
-	
+	do
 	{
-		if (c >= '0' && c<= '9')
-		{
-			num++;
-		}
-	}
-    
-    printf("the number of digits is %i\n", num);
+	 printf("input a number:");
+	 scanf("%i", &i);
+	 
+	 if(answer >1)
+	   printf("low!\n");
+	 else if (answer <1)
+	   printf("high!\n");
+	   
+	  trial++;
+	}while(i != answer);
+	
+	printf("conglaturation, number of trial : %i\n", trial);
+	
 	return 0;
 }
